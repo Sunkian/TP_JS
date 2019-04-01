@@ -13,7 +13,7 @@ yarn run start
 
 ## Functions
 ```
-The project is divided by four main classes
+The project is divided in four main classes
     -City :
         *Everything is managed in the city. It deals with the favor and
         retribution from the gods, the army and the tradings.
