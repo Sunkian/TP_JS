@@ -41,6 +41,7 @@ class City {
     this.manageCorn();
     this.starvation();
     this.trading_.switchSeason();
+    this.manageTrading(); //
                           }
 
   giveOffrandToGod() {
@@ -65,6 +66,22 @@ class City {
   manageCorn() {
     this.corn_ -= this.army_.length * 10;
   }
+
+  //
+  manageTrading(){
+
+    if (this.trading_.isSummer){
+      this.corn_ += this.corn_*2;
+      console.log("C'est l'été, on a de bonnes récoltes"); }
+
+      else {
+        this.corn_ -= this.corn_*0.5;
+        console.log("C'est l'hiver, les récoltes sont gelées");
+
+      }
+
+    }
+
 
   manageArmy(percent) {
     if (this.gold_ > 1000) {

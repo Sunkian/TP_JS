@@ -11,6 +11,12 @@ yarn
 yarn run start
 ```
 
+## Functions
+```
+The project is divided in four main classes
+
+```
+
 
 
 
