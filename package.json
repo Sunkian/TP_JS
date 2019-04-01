@@ -1,0 +1,29 @@
+{
+  "name": "projet_js_2019",
+  "version": "1.0.0",
+  "description": "index json",
+  "main": "index.js",
+  "repository": "--yes",
+  "author": "Alice",
+  "license": "MIT",
+  "private": null,
+  "scripts": {
+    "code-style": "xo",
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^6.0.2"
+  },
+  "xo": {
+    "envs": [
+      "mocha"
+    ],
+    "space": 2,
+    "prettier": true
+  },
+  "dependencies": {
+    "xo": "^0.24.0"
+  }
+}
