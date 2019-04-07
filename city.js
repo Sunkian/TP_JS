@@ -11,7 +11,6 @@ class City {
     this.army_ = [];
     this.init();
     this.trading_ = new Trading();
-
   }
 
   init() {
@@ -42,7 +41,7 @@ class City {
     this.starvation();
     this.trading_.switchSeason();
     this.manageTrading(); //
-                          }
+  }
 
   giveOffrandToGod() {
     if (this.corn_ > 0) {
@@ -68,20 +67,15 @@ class City {
   }
 
   //
-  manageTrading(){
-
-    if (this.trading_.isSummer){
-      this.corn_ += this.corn_*2;
-      console.log("C'est l'été, on a de bonnes récoltes"); }
-
-      else {
-        this.corn_ -= this.corn_*0.5;
-        console.log("C'est l'hiver, les récoltes sont gelées");
-
-      }
-
+  manageTrading() {
+    if (this.trading_.isSummer) {
+      this.corn_ += this.corn_ * 2;
+      console.log("C'est l'été, on a de bonnes récoltes");
+    } else {
+      this.corn_ -= this.corn_ * 0.5;
+      console.log("C'est l'hiver, les récoltes sont gelées");
     }
-
+  }
 
   manageArmy(percent) {
     if (this.gold_ > 1000) {
@@ -117,8 +111,6 @@ class City {
   cleanarmy() {
     this.army_ = this.army_.filter(soldier => soldier.isAlive);
   }
-
-
 }
 
 module.exports = {City};

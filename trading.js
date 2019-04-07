@@ -1,14 +1,12 @@
 class Trading {
-    constructor(){
-        this.isSummer = true;
+  constructor() {
+    this.isSummer = true;
+  }
 
-        }
-
-    switchSeason(){
-        this.isSummer =  Math.random() > 0.5;
-        console.log(this.isSummer ? 'été' : 'hiver');
-    }
-    
+  switchSeason() {
+    this.isSummer = Math.random() > 0.5;
+    console.log(this.isSummer ? 'été' : 'hiver');
+  }
 }
 
 module.exports = {Trading};
