@@ -5,7 +5,7 @@ class Trading {
 
   switchSeason() {
     this.isSummer = Math.random() > 0.5;
-    console.log(this.isSummer ? 'été' : 'hiver');
+    // Console.log(this.isSummer ? 'été' : 'hiver');
   }
 }
 

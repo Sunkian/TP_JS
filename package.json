@@ -9,7 +9,8 @@
   "private": null,
   "scripts": {
     "code-style": "xo",
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "mocha"
   },
   "devDependencies": {
     "chai": "^4.2.0",

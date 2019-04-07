@@ -27,7 +27,7 @@ class City {
   }
 
   receiveRetribution(r) {
-    console.log('Vous êtes faits punir par le dieu');
+    console.log(`${this.name_} Vous vous êtes fait punir par le Dieu`);
     this.army_ = this.army_.slice(r);
   }
 
@@ -70,10 +70,10 @@ class City {
   manageTrading() {
     if (this.trading_.isSummer) {
       this.corn_ += this.corn_ * 2;
-      console.log("C'est l'été, on a de bonnes récoltes");
+      // Console.log("C'est l'été, on a de bonnes récoltes");
     } else {
       this.corn_ -= this.corn_ * 0.5;
-      console.log("C'est l'hiver, les récoltes sont gelées");
+      // Console.log("C'est l'hiver, les récoltes sont gelées");
     }
   }
 
@@ -89,13 +89,14 @@ class City {
   }
 
   defense() {
-    console.log('Défendez la cité');
+    console.log(`${this.name_} Defend`);
     this.army_.forEach(soldier => soldier.defend());
     this.cleanarmy();
   }
 
-  attack() {
-    console.log("A l'attaque");
+  attack(enemyCity) {
+    console.log(`${this.name_} Attaque`);
+    enemyCity.defense();
     this.army_.forEach(soldier => soldier.attack());
     this.cleanarmy();
     this.gold_ += this.army_.length * 30;
